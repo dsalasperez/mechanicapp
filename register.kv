@@ -1,0 +1,37 @@
+<RegisterScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text: 'Name'
+        TextInput:
+            id: name_input
+            multiline: False
+
+        Label:
+            text: 'Username'
+        TextInput:
+            id: username_input
+            multiline: False
+
+        Label:
+            text: 'Password'
+        TextInput:
+            id: password_input
+            password: True
+            multiline: False
+
+        Label:
+            text: 'Confirm Password'
+        TextInput:
+            id: confirm_password_input
+            password: True
+            multiline: False
+
+        Button:
+            text: 'Register'
+            on_release: root.register()
+
+        Button:
+            text: 'Go back to login'
+            on_release: app.root.current = 'login'

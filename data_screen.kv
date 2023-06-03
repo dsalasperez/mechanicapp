@@ -1,0 +1,31 @@
+<DataScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+    TextInput:
+        id: datetime_input
+
+        Label:
+            text: 'Add Data Entry'
+
+        TextInput:
+            id: car_input
+            hint_text: "Enter car information"
+        TextInput:
+            id: parts_input
+            hint_text: "Enter parts information"
+        TextInput:
+            id: description_input
+            hint_text: "Enter description"
+        TextInput:
+            id: datetime_input
+            hint_text: "Enter date and time"
+        TextInput:
+            id: submitted_by_input
+            hint_text: "Enter your name"
+        Button:
+            text: "Submit"
+            on_press: root.submit_data()
+
+        Button:
+            text: 'Logout'
+            on_press: root.logout()
